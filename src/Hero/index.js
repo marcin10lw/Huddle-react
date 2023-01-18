@@ -1,5 +1,6 @@
 import { StyledHero } from "./styled";
 import { Button } from "../Button/styled";
+import Statistics from "../Statistics.js";
 
 const Hero = () => {
   return (
@@ -11,7 +12,11 @@ const Hero = () => {
         in genuine discussion.
       </p>
       <Button inMain>Get Started For Free</Button>
-      <img src={`${process.env.PUBLIC_URL}/assets/images/screen-mockups.svg`} />
+      <img
+        src={`${process.env.PUBLIC_URL}/assets/images/screen-mockups.svg`}
+        alt="mockup"
+      />
+      <Statistics />
     </StyledHero>
   );
 };
