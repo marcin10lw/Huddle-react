@@ -14,6 +14,6 @@ export const StyledHeader = styled.header`
 `;
 
 export const Logo = styled.img`
-  width: 7.5rem;
-  width: clamp(7.5rem, 4.86rem + 11.27vw, 15rem);
+  width: 6.5625rem;
+  width: clamp(6.5625rem, 3.59rem + 12.68vw, 15rem);
 `;
