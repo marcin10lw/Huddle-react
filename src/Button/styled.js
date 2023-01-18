@@ -16,6 +16,7 @@ export const Button = styled.button`
       color: ${pink};
       padding: 8px 24px;
       transition: all 120ms ease-out;
+      background-color: transparent;
 
       &:hover {
         border: 1.5px solid ${lightPink};
@@ -39,6 +40,7 @@ export const Button = styled.button`
       font-weight: 600;
       padding: 26px 100px;
       border-radius: 40px;
+      box-shadow: 2px 2px 12px 1px hsl(0deg 0% 72%);
       transition: background-color 120ms ease-out;
 
       &:hover {
