@@ -1,5 +1,5 @@
 import { StyledMain } from "./styled";
-import Hero from "../Hero";
+import Hero from "./Hero";
 
 const Main = () => {
   return (

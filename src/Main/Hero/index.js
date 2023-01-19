@@ -1,5 +1,5 @@
 import { StyledHero } from "./styled";
-import { Button } from "../Button/styled";
+import { Button } from "../../Button/styled";
 import Statistics from "../Statistics.js";
 
 const Hero = () => {

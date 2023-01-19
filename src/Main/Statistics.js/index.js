@@ -1,5 +1,5 @@
 import { StyledStatistics } from "./styled";
-import Statictic from "../Statistic";
+import Statictic from "./Statistic";
 
 const Statistics = () => {
   const statistics = [
