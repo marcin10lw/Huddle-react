@@ -1,13 +1,11 @@
 import styled from "styled-components";
 
-const vdCyan = ({ theme }) => theme.colors.vdCyan;
 const grey = ({ theme }) => theme.colors.grey;
 
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: ${vdCyan};
 
   img {
     align-self: flex-start;
@@ -21,12 +19,12 @@ export const Wrapper = styled.div`
 export const Amount = styled.div`
   font-weight: 800;
   font-size: 3.875rem;
-  font-size: clamp(3.875rem, 3.48rem + 1.69vw, 5rem);
+  font-size: clamp(3.875rem, 3.26rem + 2.63vw, 5.625rem);
 `;
 
 export const Operation = styled.div`
   font-weight: 400;
   color: ${grey};
   font-size: 0.9375rem;
-  font-size: clamp(0.9375rem, 0.83rem + 0.47vw, 1.25rem);
+  font-size: clamp(0.9375rem, 0.76rem + 0.75vw, 1.4375rem);
 `;
