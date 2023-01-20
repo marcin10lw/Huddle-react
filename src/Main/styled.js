@@ -8,7 +8,7 @@ export const StyledMain = styled.main`
   line-height: 1.5;
   color: ${({theme}) => theme.colors.vdCyan};
 
-  h1, h2 {
+  h1, h2, h3 {
     font-family: "Poppins", sans-serif;
   }
 

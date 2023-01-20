@@ -1,13 +1,14 @@
 import { StyledMain } from "./styled";
 import Hero from "./Hero";
 import Sections from "./Articles";
-import { Button } from "../Button/styled";
+import Ready from "./Ready";
 
 const Main = () => {
   return (
     <StyledMain>
       <Hero />
       <Sections />
+      <Ready />
     </StyledMain>
   );
 };

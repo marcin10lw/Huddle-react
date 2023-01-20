@@ -50,6 +50,10 @@ export const Button = styled.button`
       @media (max-width: ${mobile}) {
         padding: 14px 40px;
         font-size: 12px;
+
+        &:last-child {
+          margin-top: 32px;
+        }
       }
     `}
 `;
