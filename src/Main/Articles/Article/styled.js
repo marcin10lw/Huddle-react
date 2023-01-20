@@ -7,7 +7,7 @@ export const StyledArticle = styled.article`
   grid-template-columns: repeat(2, minmax(0px, 500px));
   align-items: center;
   justify-content: space-around;
-  margin-top: 250px;
+  margin-top: 235px;
 
   &:nth-child(odd) img {
     grid-area: 1 / 2 / 2 / 3;
@@ -38,8 +38,8 @@ export const Info = styled.div`
   }
 
   p {
-    font-size: 0.875rem;
-    font-size: clamp(0.875rem, 0.83rem + 0.19vw, 1rem);
+    font-size: 0.8125rem;
+    font-size: clamp(0.8125rem, 0.75rem + 0.28vw, 1rem);
   }
 
   @media (max-width: ${mobile}px) {

@@ -5,7 +5,8 @@ export const StyledContact = styled.section`
   width: 100%;
 
   @media (max-width: ${({ theme }) => theme.mobile}px) {
-    margin-top: 80px;
+    margin-top: 90px;
+    align-self: flex-start;
   }
 `;
 
@@ -18,6 +19,7 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   margin-top: 20px;
+  margin-left: 2px;
 `;
 
 export const Icon = styled.img``;

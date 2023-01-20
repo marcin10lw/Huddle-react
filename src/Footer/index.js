@@ -1,6 +1,7 @@
 import { StyledFooter, StylingPicture, Wrapper } from "./styled";
 import Contact from "./Contact";
 import Newsletter from "./Newsletter";
+import Socials from "./Socials";
 
 const Footer = () => {
   return (
@@ -19,6 +20,7 @@ const Footer = () => {
         <Wrapper>
           <Contact />
           <Newsletter />
+          <Socials />
         </Wrapper>
       </StyledFooter>
     </>

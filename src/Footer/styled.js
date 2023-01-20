@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
+const mobile = ({ theme }) => theme.mobile;
+
 export const StyledFooter = styled.footer`
   background-color: ${({ theme }) => theme.colors.vdCyan};
   color: ${({ theme }) => theme.colors.vpBlue};
-  padding: 120px 38px;
+  padding: 105px 30px;
   line-height: 1.6;
 
   p {
@@ -11,6 +13,11 @@ export const StyledFooter = styled.footer`
     font-size: clamp(0.875rem, 0.83rem + 0.19vw, 1rem);
     max-width: 375px;
     width: 100%;
+    padding-right: 10px;
+  }
+
+  @media (max-width: ${mobile}px) {
+    padding-top: 65px;
   }
 `;
 
@@ -25,11 +32,12 @@ export const StylingPicture = styled.picture`
 `;
 
 export const Wrapper = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0px, 550px));
   align-items: center;
   justify-content: space-around;
 
-  @media (max-width: ${({ theme }) => theme.mobile}px) {
-    flex-direction: column-reverse;
+  @media (max-width: ${mobile}px) {
+    grid-template-columns: 1fr;
   }
 `;

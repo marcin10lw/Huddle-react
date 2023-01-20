@@ -1,6 +1,7 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const mobile = ({ theme }) => theme.mobile;
+const red = ({ theme }) => theme.colors.lightRed;
 
 export const StyledNewsletter = styled.section`
   max-width: 550px;
@@ -12,17 +13,30 @@ export const StyledNewsletter = styled.section`
     font-size: clamp(1.25rem, 1.14rem + 0.47vw, 1.5625rem);
     margin: 0;
   }
+
+  @media (max-width: ${mobile}px) {
+    grid-row: 1 / 2;
+  }
 `;
 
 export const Form = styled.form`
   margin-top: 40px;
   display: flex;
   gap: 40px;
+  position: relative;
 
   @media (max-width: ${mobile}px) {
     flex-direction: column;
     gap: 20px;
   }
+`;
+
+export const Error = styled.span`
+  display: none;
+  position: absolute;
+  color: ${red};
+  font-weight: 500;
+  top: 53px;
 `;
 
 export const EmailInput = styled.input`
@@ -31,6 +45,19 @@ export const EmailInput = styled.input`
   border: none;
   padding: 14px;
   border-radius: 5px;
+
+  &:invalid {
+    border: 1px solid ${red};
+  }
+
+  &:invalid ~ ${Error} {
+    display: block;
+  }
+
+  @media (max-width: ${mobile}px) {
+    max-width: none;
+    font-size: 20px;
+  }
 `;
 
 export const SubmitButton = styled.button`
