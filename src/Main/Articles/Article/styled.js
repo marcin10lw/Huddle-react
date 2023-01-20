@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const mobile = ({ theme }) => theme.mobile;
 
-export const StyledSection = styled.section`
+export const StyledArticle = styled.article`
   display: grid;
   grid-template-columns: repeat(2, minmax(0px, 500px));
   align-items: center;

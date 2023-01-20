@@ -1,8 +1,8 @@
 import { Wrapper } from "./styled";
-import Section from "../Section";
+import Article from "./Article";
 
 const Sections = () => {
-  const sections = [
+  const articles = [
     {
       id: 1,
       heading: "Grow Together",
@@ -26,11 +26,11 @@ const Sections = () => {
     },
   ];
 
-  const renderedSections = sections.map(({ id, heading, text, image, alt }) => (
-    <Section key={id} heading={heading} text={text} image={image} alt={alt} />
+  const renderedArticles = articles.map(({ id, heading, text, image, alt }) => (
+    <Article key={id} heading={heading} text={text} image={image} alt={alt} />
   ));
 
-  return <Wrapper>{renderedSections}</Wrapper>;
+  return <Wrapper>{renderedArticles}</Wrapper>;
 };
 
 export default Sections;
