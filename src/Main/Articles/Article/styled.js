@@ -34,6 +34,7 @@ export const Info = styled.div`
   h2 {
     font-size: 1.375rem;
     font-size: clamp(1.375rem, 1.02rem + 1.5vw, 2.375rem);
+    margin-bottom: 20px;
   }
 
   p {
