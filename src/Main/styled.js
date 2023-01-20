@@ -4,7 +4,7 @@ const mobile = ({ theme }) => `${theme.mobile}px`;
 
 export const StyledMain = styled.main`
   margin-top: 115px;
-  padding: 0 40px 100px;
+  padding: 0 38px 100px;
   line-height: 1.5;
   color: ${({theme}) => theme.colors.vdCyan};
 

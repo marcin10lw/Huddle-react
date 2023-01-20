@@ -38,8 +38,8 @@ export const Info = styled.div`
   }
 
   p {
-    font-size: 0.8125rem;
-    font-size: clamp(0.8125rem, 0.75rem + 0.28vw, 1rem);
+    font-size: 0.875rem;
+    font-size: clamp(0.875rem, 0.83rem + 0.19vw, 1rem);
   }
 
   @media (max-width: ${mobile}px) {
