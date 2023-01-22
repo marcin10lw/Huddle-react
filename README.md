@@ -29,7 +29,7 @@ As always this was an excellent learning opportunity in which I could improve ma
 
  ## Check out the demo!
 
-[![](huddle-readme-icon.png)](https://marcin10lw.github.io/notifications-page-react/)
+[![](huddle-readme-icon.png)](https://marcin10lw.github.io/Huddle-react/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
  
