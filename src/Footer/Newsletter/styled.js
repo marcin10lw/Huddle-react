@@ -34,9 +34,11 @@ export const Form = styled.form`
 export const Error = styled.span`
   display: none;
   position: absolute;
+  font-size: 0.6875rem;
+  font-size: clamp(0.6875rem, 0.62rem + 0.28vw, 0.875rem);
   color: ${red};
   font-weight: 500;
-  top: 53px;
+  top: 55px;
 `;
 
 export const EmailInput = styled.input`
