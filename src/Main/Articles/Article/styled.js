@@ -4,7 +4,7 @@ const mobile = ({ theme }) => theme.mobile;
 
 export const StyledArticle = styled.article`
   display: grid;
-  grid-template-columns: repeat(2, minmax(0px, 500px));
+  grid-template-columns: repeat(2, minmax(0px, 515px));
   align-items: center;
   justify-content: space-around;
   margin-top: 235px;
@@ -32,14 +32,14 @@ export const Info = styled.div`
   flex-basis: 550px;
 
   h2 {
-    font-size: 1.375rem;
-    font-size: clamp(1.375rem, 1.02rem + 1.5vw, 2.375rem);
+    font-size: 1.4375rem;
+    font-size: clamp(1.4375rem, 1.1074rem + 1.4085vw, 2.375rem);
     margin-bottom: 20px;
   }
 
   p {
-    font-size: 0.8125rem;
-    font-size: clamp(0.8125rem, 0.75rem + 0.28vw, 1rem);
+    font-size: 0.875rem;
+    font-size: clamp(0.875rem, 0.809rem + 0.2817vw, 1.0625rem);
   }
 
   @media (max-width: ${mobile}px) {

@@ -25,7 +25,7 @@ export const Button = styled.button`
 
       @media (max-width: ${mobile}) {
         padding: 6px 20px;
-        font-size: 10px;
+        font-size: 12px;
       }
     `}
 
@@ -49,7 +49,7 @@ export const Button = styled.button`
 
       @media (max-width: ${mobile}) {
         padding: 14px 40px;
-        font-size: 12px;
+        font-size: 14px;
 
         &:last-child {
           margin-top: 32px;

@@ -5,8 +5,8 @@ export const StyledHero = styled.section`
 
   h1 {
     margin: 0;
-    font-size: 1.5rem;
-    font-size: clamp(1.5rem, 0.93rem + 2.44vw, 3.125rem);
+    font-size: 1.5625rem;
+    font-size: clamp(1.5625rem, 1.0123rem + 2.3474vw, 3.125rem);
   }
 
   p {
