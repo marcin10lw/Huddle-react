@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/Huddle-react/static/js/main.fcb50dec.js",
+    "main.js": "/Huddle-react/static/js/main.b24321ea.js",
     "static/js/787.0c9b4559.chunk.js": "/Huddle-react/static/js/787.0c9b4559.chunk.js",
     "index.html": "/Huddle-react/index.html",
-    "main.fcb50dec.js.map": "/Huddle-react/static/js/main.fcb50dec.js.map",
+    "main.b24321ea.js.map": "/Huddle-react/static/js/main.b24321ea.js.map",
     "787.0c9b4559.chunk.js.map": "/Huddle-react/static/js/787.0c9b4559.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.fcb50dec.js"
+    "static/js/main.b24321ea.js"
   ]
 }
