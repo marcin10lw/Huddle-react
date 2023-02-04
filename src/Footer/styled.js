@@ -7,6 +7,7 @@ export const StyledFooter = styled.footer`
   color: ${({ theme }) => theme.colors.vpBlue};
   padding: 105px 30px;
   line-height: 1.6;
+  margin-top: -2px;
 
   p {
     font-size: 0.875rem;
