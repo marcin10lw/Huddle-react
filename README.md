@@ -2,9 +2,14 @@
 
 ## Description
 
-This time I have created Huddle landing page based on one of the numerous challenges of [Frontend Mentor](https://www.frontendmentor.io/home). 
+This time I have created Huddle landing page based on one of the numerous challenges of [Frontend Mentor](https://www.frontendmentor.io/home).
+
+## Check out the Demo!
+
+[![](huddle-readme-icon.png)](https://marcin10lw.github.io/Huddle-react/)
 
 As always this was an excellent learning opportunity in which I could improve making responsive design and using Font Awesome with Styled Components.
+
 ## Technologies used
 
     -REACT.JS
@@ -27,12 +32,7 @@ As always this was an excellent learning opportunity in which I could improve ma
 
 ![](huddle-react-mobile-preview.gif)
 
- ## Check out the demo!
-
-[![](huddle-readme-icon.png)](https://marcin10lw.github.io/Huddle-react/)
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
- 
 
 ## Available Scripts
 
