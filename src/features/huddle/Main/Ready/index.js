@@ -1,10 +1,10 @@
-import { Wrapper } from "./styled";
+import { Wrapper, ReadyHeader } from "./styled";
 import { Button } from "../../Button";
 
 const Ready = () => {
   return (
     <Wrapper>
-      <h3>Ready To Build Your Community?</h3>
+      <ReadyHeader>Ready To Build Your Community?</ReadyHeader>
       <Button inMain>Get Started For Free</Button>
     </Wrapper>
   );
