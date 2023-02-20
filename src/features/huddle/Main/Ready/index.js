@@ -1,5 +1,5 @@
 import { Wrapper } from "./styled";
-import { Button } from "../../Button/styled";
+import { Button } from "../../Button";
 
 const Ready = () => {
   return (

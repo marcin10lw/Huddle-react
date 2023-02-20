@@ -1,5 +1,5 @@
 import { StyledHeader, Logo } from "./styled";
-import { Button } from "../Button/styled";
+import { Button } from "../Button";
 
 const Header = () => {
   return (
