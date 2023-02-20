@@ -1,18 +1,7 @@
-import { Container } from "./Container/styled";
-import Header from "./Header";
-import Main from "./Main";
-import Footer from "./Footer";
+import HuddlePage from "./features/huddle/HuddlePage";
 
-function App() {
-  return (
-    <>
-      <Container>
-        <Header />
-        <Main />
-      </Container>
-      <Footer />
-    </>
-  );
-}
+const App = () => {
+  return <HuddlePage />;
+};
 
 export default App;
