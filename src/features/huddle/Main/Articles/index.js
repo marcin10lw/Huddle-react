@@ -1,4 +1,4 @@
-import { Wrapper } from "./styled";
+import { ArticlesList } from "./styled";
 import Article from "./Article";
 
 const Sections = () => {
@@ -30,7 +30,11 @@ const Sections = () => {
     <Article key={id} heading={heading} text={text} image={image} alt={alt} />
   ));
 
-  return <Wrapper>{renderedArticles}</Wrapper>;
+  return (
+    <section>
+      <ArticlesList>{renderedArticles}</ArticlesList>
+    </section>
+  );
 };
 
 export default Sections;

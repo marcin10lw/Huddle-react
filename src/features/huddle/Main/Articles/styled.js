@@ -1,3 +1,7 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.section``;
+export const ArticlesList = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0;
+`;
