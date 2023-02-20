@@ -1,14 +1,23 @@
-import { StyledArticle, Info } from "./styled";
+import {
+  StyledArticle,
+  Info,
+  ListItem,
+  ArticleImage,
+  ArticleHeader,
+  ArticleText,
+} from "./styled";
 
 const Article = ({ heading, text, image, alt }) => {
   return (
-    <StyledArticle>
-      <img src={image} alt={alt} />
-      <Info>
-        <h2>{heading}</h2>
-        <p>{text}</p>
-      </Info>
-    </StyledArticle>
+    <ListItem>
+      <StyledArticle>
+        <ArticleImage src={image} alt={alt} />
+        <Info>
+          <ArticleHeader>{heading}</ArticleHeader>
+          <ArticleText>{text}</ArticleText>
+        </Info>
+      </StyledArticle>
+    </ListItem>
   );
 };
 
