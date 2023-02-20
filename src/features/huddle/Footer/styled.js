@@ -9,14 +9,6 @@ export const StyledFooter = styled.footer`
   line-height: 1.6;
   margin-top: -2px;
 
-  p {
-    font-size: 0.875rem;
-    font-size: clamp(0.875rem, 0.83rem + 0.19vw, 1rem);
-    max-width: 375px;
-    width: 100%;
-    padding-right: 10px;
-  }
-
   @media (max-width: ${mobile}px) {
     padding-top: 65px;
   }
@@ -25,11 +17,11 @@ export const StyledFooter = styled.footer`
 export const StylingPicture = styled.picture`
   display: block;
   margin-top: 70px;
+`;
 
-  img {
-    width: 100%;
-    display: block;
-  }
+export const PictureImage = styled.img`
+  width: 100%;
+  display: block;
 `;
 
 export const Wrapper = styled.div`

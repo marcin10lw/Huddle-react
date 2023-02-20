@@ -1,4 +1,4 @@
-import { StyledFooter, StylingPicture, Wrapper } from "./styled";
+import { StyledFooter, StylingPicture, Wrapper, PictureImage } from "./styled";
 import Contact from "./Contact";
 import Newsletter from "./Newsletter";
 import Socials from "./Socials";
@@ -11,7 +11,7 @@ const Footer = () => {
           srcSet={`${process.env.PUBLIC_URL}/assets/images/bg-footer-top-mobile.svg`}
           media="(max-width: 767px)"
         />
-        <img
+        <PictureImage
           src={`${process.env.PUBLIC_URL}/assets/images/bg-footer-top-desktop.svg`}
           alt=""
         />
