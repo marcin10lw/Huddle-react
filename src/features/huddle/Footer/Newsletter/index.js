@@ -1,14 +1,21 @@
-import { StyledNewsletter, Form, EmailInput, SubmitButton, Error } from "./styled";
+import { TextContent } from "../TextContent";
+import {
+  StyledNewsletter,
+  Form,
+  EmailInput,
+  SubmitButton,
+  Error,
+  NewsletterHeader,
+} from "./styled";
 
 const Newsletter = () => {
-
   return (
     <StyledNewsletter>
-      <h4>NEWSLETTER</h4>
-      <p>
+      <NewsletterHeader>NEWSLETTER</NewsletterHeader>
+      <TextContent>
         To recieve tips on how to grow your community, sign up to our weekly
         newsletter. We’ll never send you spam or pass on your email address
-      </p>
+      </TextContent>
       <Form>
         <EmailInput type="email" name="email" />
         <Error>Check your email please</Error>

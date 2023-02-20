@@ -7,12 +7,12 @@ export const StyledNewsletter = styled.section`
   max-width: 550px;
   width: 100%;
   align-self: flex-start;
+`;
 
-  h4 {
-    font-size: 1.25rem;
-    font-size: clamp(1.25rem, 1.14rem + 0.47vw, 1.5625rem);
-    margin: 0;
-  }
+export const NewsletterHeader = styled.h4`
+  font-size: 1.25rem;
+  font-size: clamp(1.25rem, 1.14rem + 0.47vw, 1.5625rem);
+  margin: 0;
 
   @media (max-width: ${mobile}px) {
     grid-row: 1 / 2;
