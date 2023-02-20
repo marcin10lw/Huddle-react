@@ -1,3 +1,4 @@
+import { TextContent } from "../TextContent";
 import { StyledContact, Logo, Wrapper, Icon, Info } from "./styled";
 const Contact = () => {
   return (
@@ -6,16 +7,22 @@ const Contact = () => {
         src={`${process.env.PUBLIC_URL}/assets/images/logo-white.svg`}
         alt="logo"
       />
-      <p>
+      <TextContent>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla
         quam, hendrerit lacinia vestibulum a, ultrices quis sem.
-      </p>
+      </TextContent>
       <Wrapper>
-        <Icon src={`${process.env.PUBLIC_URL}/assets/images/icon-phone.svg`} alt="phone" />
+        <img
+          src={`${process.env.PUBLIC_URL}/assets/images/icon-phone.svg`}
+          alt="phone"
+        />
         <Info>Phone: +1-543-123-4567</Info>
       </Wrapper>
       <Wrapper>
-        <Icon src={`${process.env.PUBLIC_URL}/assets/images/icon-email.svg`} alt="email" />
+        <img
+          src={`${process.env.PUBLIC_URL}/assets/images/icon-email.svg`}
+          alt="email"
+        />
         <Info>example@huddle.com</Info>
       </Wrapper>
     </StyledContact>

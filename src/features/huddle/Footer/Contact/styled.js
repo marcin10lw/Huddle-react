@@ -22,8 +22,6 @@ export const Wrapper = styled.div`
   margin-left: 2px;
 `;
 
-export const Icon = styled.img``;
-
 export const Info = styled.span`
   margin-left: 20px;
 `;
