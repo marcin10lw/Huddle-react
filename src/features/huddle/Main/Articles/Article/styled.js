@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-const mobile = ({ theme }) => theme.mobile;
-
 export const ArticleImage = styled.img`
   max-width: 550px;
   width: 100%;
@@ -12,7 +10,7 @@ export const ListItem = styled.li`
     grid-area: 1 / 2 / 2 / 3;
   }
 
-  @media (max-width: ${mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     &:nth-child(odd) ${ArticleImage} {
       grid-area: auto;
     }
@@ -25,8 +23,10 @@ export const StyledArticle = styled.article`
   align-items: center;
   justify-content: space-around;
   margin-top: 235px;
+  gap: 15px;
 
-  @media (max-width: ${mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    gap: 0;
     grid-template-columns: auto;
     margin-top: 190px;
   }
@@ -35,7 +35,7 @@ export const StyledArticle = styled.article`
 export const Info = styled.div`
   flex-basis: 550px;
 
-  @media (max-width: ${mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     text-align: center;
     margin-top: 58px;
   }

@@ -8,5 +8,7 @@ export const theme = {
     grey: "hsl(210deg 4% 61%);",
     blue: "hsl(201deg 100% 62%)",
   },
-  mobile: 767,
+  breakpoints: {
+    mobile: 767,
+  },
 };

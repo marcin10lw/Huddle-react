@@ -7,7 +7,7 @@ export const StyledSocials = styled.section`
   gap: 28px;
   margin-top: 80px;
 
-  @media (max-width: ${({ theme }) => theme.mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     grid-column: auto;
   }
 

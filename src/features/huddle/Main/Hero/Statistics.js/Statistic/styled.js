@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-const grey = ({ theme }) => theme.colors.grey;
-
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -16,7 +14,7 @@ export const Amount = styled.div`
 
 export const Operation = styled.div`
   font-weight: 400;
-  color: ${grey};
+  color: ${({ theme }) => theme.colors.grey};
   font-size: 0.9375rem;
   font-size: clamp(0.9375rem, 0.76rem + 0.75vw, 1.4375rem);
 `;

@@ -1,7 +1,4 @@
-import styled, { css } from "styled-components";
-
-const mobile = ({ theme }) => theme.mobile;
-const red = ({ theme }) => theme.colors.lightRed;
+import styled from "styled-components";
 
 export const StyledNewsletter = styled.section`
   max-width: 550px;
@@ -14,7 +11,7 @@ export const NewsletterHeader = styled.h4`
   font-size: clamp(1.25rem, 1.14rem + 0.47vw, 1.5625rem);
   margin: 0;
 
-  @media (max-width: ${mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     grid-row: 1 / 2;
   }
 `;
@@ -25,7 +22,7 @@ export const Form = styled.form`
   gap: 40px;
   position: relative;
 
-  @media (max-width: ${mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     flex-direction: column;
     gap: 20px;
   }
@@ -36,7 +33,7 @@ export const Error = styled.span`
   position: absolute;
   font-size: 0.6875rem;
   font-size: clamp(0.6875rem, 0.62rem + 0.28vw, 0.875rem);
-  color: ${red};
+  color: ${({ theme }) => theme.colors.lightRed};
   font-weight: 500;
   top: 55px;
 `;
@@ -49,14 +46,14 @@ export const EmailInput = styled.input`
   border-radius: 5px;
 
   &:invalid {
-    border: 1px solid ${red};
+    border: 1px solid ${({ theme }) => theme.colors.lightRed};
   }
 
   &:invalid ~ ${Error} {
     display: block;
   }
 
-  @media (max-width: ${mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     max-width: none;
     font-size: 20px;
   }
@@ -76,7 +73,7 @@ export const SubmitButton = styled.button`
     background-color: ${({ theme }) => theme.colors.lightPink};
   }
 
-  @media (max-width: ${mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     align-self: flex-end;
   }
 `;

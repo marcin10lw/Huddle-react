@@ -4,7 +4,7 @@ export const StyledContact = styled.section`
   max-width: 500px;
   width: 100%;
 
-  @media (max-width: ${({ theme }) => theme.mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     margin-top: 90px;
     align-self: flex-start;
   }

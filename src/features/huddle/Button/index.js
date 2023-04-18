@@ -1,10 +1,5 @@
 import styled, { css } from "styled-components";
 
-const pink = ({ theme }) => theme.colors.pink;
-const lightPink = ({ theme }) => theme.colors.lightPink;
-const vpBlue = ({ theme }) => theme.colors.vpBlue;
-const mobile = ({ theme }) => `${theme.mobile}px`;
-
 export const Button = styled.button`
   border-radius: 20px;
   cursor: pointer;
@@ -12,18 +7,18 @@ export const Button = styled.button`
   ${({ inHeader }) =>
     inHeader &&
     css`
-      border: 1.5px solid ${pink};
-      color: ${pink};
+      border: 1.5px solid ${({ theme }) => theme.colors.pink};
+      color: ${({ theme }) => theme.colors.pink};
       padding: 8px 24px;
       transition: all 120ms ease-out;
       background-color: transparent;
 
       &:hover {
-        border: 1.5px solid ${lightPink};
-        color: ${lightPink};
+        border: 1.5px solid ${({ theme }) => theme.colors.lightPink};
+        color: ${({ theme }) => theme.colors.lightPink};
       }
 
-      @media (max-width: ${mobile}) {
+      @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         padding: 6px 20px;
         font-size: 12px;
       }
@@ -34,8 +29,8 @@ export const Button = styled.button`
     css`
       margin-top: 42px;
       border: none;
-      background-color: ${pink};
-      color: ${vpBlue};
+      background-color: ${({ theme }) => theme.colors.pink};
+      color: ${({ theme }) => theme.colors.vpBlue};
       font-size: 20px;
       font-weight: 600;
       padding: 26px 100px;
@@ -44,10 +39,10 @@ export const Button = styled.button`
       transition: background-color 120ms ease-out;
 
       &:hover {
-        background-color: ${lightPink};
+        background-color: ${({ theme }) => theme.colors.lightPink};
       }
 
-      @media (max-width: ${mobile}) {
+      @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         padding: 14px 40px;
         font-size: 14px;
 

@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-const mobile = ({ theme }) => theme.mobile;
-
 export const StyledFooter = styled.footer`
   background-color: ${({ theme }) => theme.colors.vdCyan};
   color: ${({ theme }) => theme.colors.vpBlue};
@@ -9,7 +7,7 @@ export const StyledFooter = styled.footer`
   line-height: 1.6;
   margin-top: -2px;
 
-  @media (max-width: ${mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     padding-top: 65px;
   }
 `;
@@ -30,7 +28,7 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: space-around;
 
-  @media (max-width: ${mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     grid-template-columns: 1fr;
   }
 `;
