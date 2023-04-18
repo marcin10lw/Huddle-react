@@ -1,10 +1,13 @@
 import { Wrapper, Amount, Operation, StaticticIcon } from "./styled";
 
-const Statictic = ({ image, alt, amount, operation }) => {
+const Statictic = ({ image, alt, amount, prefix, operation }) => {
   return (
     <Wrapper>
       <StaticticIcon src={image} alt={alt} />
-      <Amount>{amount}</Amount>
+      <Amount>
+        {amount}
+        {prefix}
+      </Amount>
       <Operation>{operation}</Operation>
     </Wrapper>
   );
