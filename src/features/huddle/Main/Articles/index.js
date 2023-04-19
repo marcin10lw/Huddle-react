@@ -1,7 +1,7 @@
 import { ArticlesList } from "./styled";
 import Article from "./Article";
 
-const Sections = () => {
+const Articles = () => {
   const articles = [
     {
       id: 1,
@@ -37,4 +37,4 @@ const Sections = () => {
   );
 };
 
-export default Sections;
+export default Articles;

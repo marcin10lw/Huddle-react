@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledStatistics = styled.div`
+export const StyledStatistics = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-around;

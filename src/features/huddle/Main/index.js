@@ -1,13 +1,15 @@
 import { StyledMain } from "./styled";
 import Hero from "./Hero";
-import Sections from "./Articles";
+import Articles from "./Articles";
 import Ready from "./Ready";
+import Statistics from "./Statistics.js";
 
 const Main = () => {
   return (
     <StyledMain>
       <Hero />
-      <Sections />
+      <Statistics />
+      <Articles />
       <Ready />
     </StyledMain>
   );
