@@ -22,7 +22,7 @@ const statisticVariants = {
 };
 
 const Statistics = () => {
-  const { animation, ref } = useInViewAnimation(0.7);
+  const { animation, ref } = useInViewAnimation(0.4);
 
   return (
     <StyledStatistics

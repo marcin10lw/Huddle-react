@@ -2,6 +2,7 @@ import { Wrapper, ReadyHeader } from "./styled";
 import Button from "../../Button";
 import { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
+import useInViewAnimation from "../../useInViewAnimation";
 
 const readyVariants = {
   hidden: {
@@ -22,20 +23,12 @@ const readyVariants = {
 };
 
 const Ready = () => {
-  const statisticRef = useRef(null);
-  const inView = useInView(statisticRef, { amount: 0.7, once: false });
-  const animation = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      animation.start("visible");
-    }
-  }, [animation, inView]);
+  const { animation, ref } = useInViewAnimation(0.4);
 
   return (
     <Wrapper
       as={motion.section}
-      ref={statisticRef}
+      ref={ref}
       variants={readyVariants}
       initial="hidden"
       animate={animation}
