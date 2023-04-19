@@ -11,7 +11,14 @@ export const StyledHeader = styled.header`
   }
 `;
 
-export const Logo = styled.img`
+export const HeaderLink = styled.a`
+  display: block;
   max-width: 7.5rem;
   max-width: clamp(7.5rem, 4.64rem + 12.21vw, 15.625rem);
+  cursor: pointer;
+`;
+
+export const Logo = styled.img`
+  display: block;
+  width: 100%;
 `;

@@ -1,4 +1,4 @@
-import { StyledHeader, Logo } from "./styled";
+import { StyledHeader, Logo, HeaderLink } from "./styled";
 import Button from "../Button";
 import { motion } from "framer-motion";
 
@@ -26,10 +26,12 @@ const Header = () => {
       initial="hidden"
       animate="visible"
     >
-      <Logo
-        src={`${process.env.PUBLIC_URL}/assets/images/logo.svg`}
-        alt="logo"
-      />
+      <HeaderLink href="#">
+        <Logo
+          src={`${process.env.PUBLIC_URL}/assets/images/logo.svg`}
+          alt="logo"
+        />
+      </HeaderLink>
       <Button content="Try It Free" location="header"></Button>
     </StyledHeader>
   );
