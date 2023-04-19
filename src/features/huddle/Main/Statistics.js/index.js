@@ -1,7 +1,7 @@
 import { StyledStatistics } from "./styled";
 import Statictic from "./Statistic";
-import { motion, useAnimation, useInView } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
+import useInViewAnimation from "../../useInViewAnimation";
 
 const statisticVariants = {
   hidden: {
@@ -22,19 +22,11 @@ const statisticVariants = {
 };
 
 const Statistics = () => {
-  const statisticRef = useRef(null);
-  const inView = useInView(statisticRef, { amount: 0.7, once: false });
-  const animation = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      animation.start("visible");
-    }
-  }, [animation, inView]);
+  const { animation, ref } = useInViewAnimation(0.7);
 
   return (
     <StyledStatistics
-      ref={statisticRef}
+      ref={ref}
       as={motion.section}
       variants={statisticVariants}
       initial="hidden"

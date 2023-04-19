@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import {
   StyledArticle,
   Info,
@@ -7,27 +6,19 @@ import {
   ArticleHeader,
   ArticleText,
 } from "./styled";
-import { motion, useAnimation, useInView } from "framer-motion";
-import { useEffect } from "react";
+import { motion } from "framer-motion";
 import { imageVariants, infoVariants } from "../variants";
+import useInViewAnimation from "../../../useInViewAnimation";
 
 const Article = ({ heading, text, image, alt }) => {
-  const statisticRef = useRef(null);
-  const inView = useInView(statisticRef, { amount: 0.7, once: false });
-  const animation = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      animation.start("visible");
-    }
-  }, [animation, inView]);
+  const { animation, ref } = useInViewAnimation(0.6);
 
   return (
     <ListItem>
       <StyledArticle>
         <ArticleImage
           as={motion.img}
-          ref={statisticRef}
+          ref={ref}
           variants={imageVariants}
           initial="hidden"
           animate={animation}
@@ -36,7 +27,7 @@ const Article = ({ heading, text, image, alt }) => {
         />
         <Info
           as={motion.div}
-          ref={statisticRef}
+          ref={ref}
           variants={infoVariants}
           initial="hidden"
           animate={animation}
