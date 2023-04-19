@@ -9,6 +9,7 @@ export const infoVariants = {
     transition: {
       duration: 1,
       ease: "easeInOut",
+      delay: 0.1,
     },
   },
 };
@@ -24,6 +25,7 @@ export const imageVariants = {
     transition: {
       duration: 1,
       ease: "easeInOut",
+      delay: 0.1,
     },
   },
 };

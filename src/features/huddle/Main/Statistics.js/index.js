@@ -16,13 +16,14 @@ const statisticVariants = {
       stiffness: 100,
       bounce: 1,
       mass: 0.7,
+      delay: 0.1,
     },
   },
 };
 
 const Statistics = () => {
   const statisticRef = useRef(null);
-  const inView = useInView(statisticRef, { amount: 0.9, once: false });
+  const inView = useInView(statisticRef, { amount: 0.7, once: false });
   const animation = useAnimation();
 
   useEffect(() => {

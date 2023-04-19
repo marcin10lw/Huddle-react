@@ -13,7 +13,7 @@ import { imageVariants, infoVariants } from "../variants";
 
 const Article = ({ heading, text, image, alt }) => {
   const statisticRef = useRef(null);
-  const inView = useInView(statisticRef, { amount: 0.9, once: false });
+  const inView = useInView(statisticRef, { amount: 0.7, once: false });
   const animation = useAnimation();
 
   useEffect(() => {
