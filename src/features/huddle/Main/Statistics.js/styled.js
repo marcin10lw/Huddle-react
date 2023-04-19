@@ -6,7 +6,7 @@ export const StyledStatistics = styled.section`
   justify-content: space-around;
   margin-top: 120px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     flex-direction: column;
     gap: 80px;
   }

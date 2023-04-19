@@ -18,7 +18,7 @@ export const StyledButton = styled.button`
         color: ${({ theme }) => theme.colors.lightPink};
       }
 
-      @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+      @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         padding: 6px 20px;
         font-size: 12px;
       }
@@ -42,7 +42,7 @@ export const StyledButton = styled.button`
         background-color: ${({ theme }) => theme.colors.lightPink};
       }
 
-      @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+      @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         padding: 14px 40px;
         font-size: 14px;
 
