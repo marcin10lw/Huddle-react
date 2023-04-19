@@ -11,7 +11,7 @@ import { imageVariants, infoVariants } from "../variants";
 import useInViewAnimation from "../../../useInViewAnimation";
 
 const Article = ({ heading, text, image, alt }) => {
-  const { animation, ref } = useInViewAnimation(0.4);
+  const { animation, ref } = useInViewAnimation(0.3);
 
   return (
     <ListItem>

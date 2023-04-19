@@ -55,7 +55,7 @@ export const EmailInput = styled.input`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     max-width: none;
-    font-size: 20px;
+    font-size: 18px;
   }
 `;
 

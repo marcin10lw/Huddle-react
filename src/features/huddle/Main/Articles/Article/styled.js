@@ -22,13 +22,13 @@ export const StyledArticle = styled.article`
   grid-template-columns: repeat(2, minmax(0px, 515px));
   align-items: center;
   justify-content: space-around;
-  margin-top: 235px;
+  margin-top: 220px;
   gap: 15px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     gap: 0;
     grid-template-columns: auto;
-    margin-top: 190px;
+    margin-top: 160px;
   }
 `;
 
@@ -38,6 +38,8 @@ export const Info = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     text-align: center;
     margin-top: 58px;
+    max-width: 450px;
+    margin-inline: auto;
   }
 `;
 

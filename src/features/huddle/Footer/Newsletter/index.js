@@ -16,8 +16,8 @@ const Newsletter = () => {
         To recieve tips on how to grow your community, sign up to our weekly
         newsletter. We’ll never send you spam or pass on your email address
       </TextContent>
-      <Form>
-        <EmailInput type="email" name="email" />
+      <Form onSubmit={(event) => event.preventDefault()}>
+        <EmailInput type="email" name="email" aria-required />
         <Error>Check your email please</Error>
         <SubmitButton>Subscribe</SubmitButton>
       </Form>

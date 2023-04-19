@@ -13,8 +13,8 @@ const statisticVariants = {
     scale: 1,
     transition: {
       type: "spring",
-      stiffness: 100,
-      bounce: 1,
+      stiffness: 60,
+      bounce: 0.25,
       mass: 0.7,
       delay: 0.1,
     },
