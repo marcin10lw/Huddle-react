@@ -5,7 +5,7 @@ import {
   HeroImage,
   ImagePlaceholder,
 } from "./styled";
-import { Button } from "../../Button";
+import Button from "../../Button";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -41,7 +41,7 @@ const Hero = () => {
         so does your audience. Create connections with your users as you engage
         in genuine discussion.
       </HeroText>
-      <Button inMain>Get Started For Free</Button>
+      <Button content="Get Started For Free" location="main"></Button>
       <HeroImage
         onLoad={() => setImageLoaded(true)}
         src={`${process.env.PUBLIC_URL}/assets/images/screen-mockups.svg`}

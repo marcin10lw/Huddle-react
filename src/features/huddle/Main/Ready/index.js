@@ -1,5 +1,5 @@
 import { Wrapper, ReadyHeader } from "./styled";
-import { Button } from "../../Button";
+import Button from "../../Button";
 import { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 
@@ -41,15 +41,7 @@ const Ready = () => {
       animate={animation}
     >
       <ReadyHeader>Ready To Build Your Community?</ReadyHeader>
-      <Button
-        as={motion.button}
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        transition={{ type: "spring", stiffness: 200, damping: 10 }}
-        inMain
-      >
-        Get Started For Free
-      </Button>
+      <Button content="Get Started For Free" location="main" />
     </Wrapper>
   );
 };

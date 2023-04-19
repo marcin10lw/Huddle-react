@@ -1,5 +1,5 @@
 import { StyledHeader, Logo } from "./styled";
-import { Button } from "../Button";
+import Button from "../Button";
 import { motion } from "framer-motion";
 
 const headerVariants = {
@@ -30,7 +30,7 @@ const Header = () => {
         src={`${process.env.PUBLIC_URL}/assets/images/logo.svg`}
         alt="logo"
       />
-      <Button inHeader>Try It Free</Button>
+      <Button content="Try It Free" location="header"></Button>
     </StyledHeader>
   );
 };
