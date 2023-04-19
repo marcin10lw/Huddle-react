@@ -12,7 +12,6 @@ const statisticVariants = {
     opacity: 1,
     scale: 1,
     transition: {
-      duration: 3,
       type: "spring",
       stiffness: 100,
       bounce: 1,
@@ -25,7 +24,6 @@ const Statistics = () => {
   const statisticRef = useRef(null);
   const inView = useInView(statisticRef, { amount: 0.9, once: false });
   const animation = useAnimation();
-  console.log(inView);
 
   useEffect(() => {
     if (inView) {
