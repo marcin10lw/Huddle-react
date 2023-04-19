@@ -22,3 +22,9 @@ export const HeroImage = styled.img`
   display: block;
   margin: 90px auto 0;
 `;
+
+export const ImagePlaceholder = styled.div`
+  margin: 90px auto 0;
+  aspect-ratio: 3 / 2;
+  height: 100%;
+`;

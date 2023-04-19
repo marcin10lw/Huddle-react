@@ -1,7 +1,13 @@
-import { StyledHero, HeroHeader, HeroText, HeroImage } from "./styled";
+import {
+  StyledHero,
+  HeroHeader,
+  HeroText,
+  HeroImage,
+  ImagePlaceholder,
+} from "./styled";
 import { Button } from "../../Button";
-import Statistics from "./Statistics.js";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const heroVariants = {
   hidden: {
@@ -20,6 +26,8 @@ const heroVariants = {
 };
 
 const Hero = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   return (
     <StyledHero
       as={motion.section}
@@ -35,10 +43,11 @@ const Hero = () => {
       </HeroText>
       <Button inMain>Get Started For Free</Button>
       <HeroImage
+        onLoad={() => setImageLoaded(true)}
         src={`${process.env.PUBLIC_URL}/assets/images/screen-mockups.svg`}
         alt="mockup"
       />
-      <Statistics />
+      {!imageLoaded && <ImagePlaceholder />}
     </StyledHero>
   );
 };
