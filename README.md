@@ -4,7 +4,7 @@
 
 This time I have created Huddle landing page based on one of the numerous challenges of [Frontend Mentor](https://www.frontendmentor.io/home).
 
-## Check out the Demo!
+## Check out the [Demo](https://marcin10lw.github.io/Huddle-react/)!
 
 [![](huddle-readme-icon.png)](https://marcin10lw.github.io/Huddle-react/)
 
@@ -12,25 +12,26 @@ As always this was an excellent learning opportunity in which I could improve ma
 
 ## Technologies used
 
-    -REACT.JS
-    -CREATE-REACT-APP
-    -WEBPACK
-    -BABEL
-    -STYLED COMPONENTS
-    -NORMALIZE.CSS
-    -GRID
-    -FLEXBOX
-    -ES6+ FEATURES
+    -React
+    -Create-react-App
+    -Webpack
+    -Babel
+    -Styled Components
+    -Normalize
+    -Grid
+    -Flexbox
+    -ES6+ Features
+    -Framer Motion
 
 ## Page preview
 
 ### Desktop preview
 
-![](huddle-react-desktop-preview.gif)
+![](huddle-desktop.gif)
 
 ### Mobile preview
 
-![](huddle-react-mobile-preview.gif)
+![](huddle-mobile.gif)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
