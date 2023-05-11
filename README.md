@@ -10,6 +10,14 @@ This time I have created Huddle landing page based on one of the numerous challe
 
 As always this was an excellent learning opportunity in which I could improve making responsive design and using Font Awesome with Styled Components.
 
+## Challenges
+
+Users should be able to:
+
+    - View the optimal layout for the site depending on their device's screen size
+    - See hover states for all interactive elements on the page
+    - See page animations on scroll
+
 ## Technologies used
 
     -React
