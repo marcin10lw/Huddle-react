@@ -14,9 +14,9 @@ As always this was an excellent learning opportunity in which I could improve ma
 
 Users should be able to:
 
-    - View the optimal layout for the site depending on their device's screen size
-    - See hover states for all interactive elements on the page
-    - See page animations on scroll
+ - View the optimal layout for the site depending on their device's screen size
+ - See hover states for all interactive elements on the page
+ - See page animations on scroll
 
 # 💻 Project Tech Stack:
 
@@ -51,7 +51,7 @@ To get a local copy up and running follow these simple steps.
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/<your-username>/Huddle-react.git
+git clone https://github.com/marcin10lw/Huddle-react
 ```
 
 2. Change into the project directory:
@@ -74,10 +74,3 @@ npm start
 
 Then open http://localhost:3000 to view the app in your browser.
 
-### Building the app
-
-```bash
-npm run build
-```
-
-The output will be generated in the `build` directory. You can then serve the app using a static file server.
