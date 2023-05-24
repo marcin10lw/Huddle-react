@@ -1,12 +1,12 @@
 # Marcin Augun - Huddle landing page
 
+[![](huddle-readme-icon.png)](https://marcin10lw.github.io/Huddle-react/)
+
 ## Description
 
 This time I have created Huddle landing page based on one of the numerous challenges of [Frontend Mentor](https://www.frontendmentor.io/home).
 
-## Check out the [Demo](https://marcin10lw.github.io/Huddle-react/)!
-
-[![](huddle-readme-icon.png)](https://marcin10lw.github.io/Huddle-react/)
+## Live Site URL: [marcin10lw.github.io/Huddle-react](https://marcin10lw.github.io/Huddle-react/)
 
 As always this was an excellent learning opportunity in which I could improve making responsive design and using Font Awesome with Styled Components.
 
