@@ -1,3 +1,6 @@
+import { useState } from "react";
+import { motion } from "framer-motion";
+
 import {
   StyledHero,
   HeroHeader,
@@ -5,9 +8,7 @@ import {
   HeroImage,
   ImagePlaceholder,
 } from "./styled";
-import Button from "../../Button";
-import { motion } from "framer-motion";
-import { useState } from "react";
+import Button from "features/huddle/Button";
 
 const heroVariants = {
   hidden: {

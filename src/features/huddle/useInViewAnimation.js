@@ -1,6 +1,5 @@
+import { useEffect, useRef } from "react";
 import { useAnimation, useInView } from "framer-motion";
-import { useEffect } from "react";
-import { useRef } from "react";
 
 const useInViewAnimation = (amount) => {
   const ref = useRef(null);

@@ -6,6 +6,7 @@ import {
   SubmitButton,
   Error,
   NewsletterHeader,
+  InputWrapper,
 } from "./styled";
 
 const Newsletter = () => {
@@ -17,8 +18,10 @@ const Newsletter = () => {
         newsletter. We’ll never send you spam or pass on your email address
       </TextContent>
       <Form onSubmit={(event) => event.preventDefault()}>
-        <EmailInput type="email" name="email" aria-required />
-        <Error>Check your email please</Error>
+        <InputWrapper>
+          <EmailInput type="email" name="email" required placeholder="" />
+          <Error>Check your email please</Error>
+        </InputWrapper>
         <SubmitButton>Subscribe</SubmitButton>
       </Form>
     </StyledNewsletter>

@@ -1,8 +1,8 @@
+import { motion } from "framer-motion";
+
+import Button from "features/huddle/Button";
+import useInViewAnimation from "features/huddle/useInViewAnimation";
 import { Wrapper, ReadyHeader } from "./styled";
-import Button from "../../Button";
-import { useEffect, useRef } from "react";
-import { motion, useAnimation, useInView } from "framer-motion";
-import useInViewAnimation from "../../useInViewAnimation";
 
 const readyVariants = {
   hidden: {

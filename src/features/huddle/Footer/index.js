@@ -1,9 +1,10 @@
-import { StyledFooter, StylingPicture, Wrapper, PictureImage } from "./styled";
+import { motion } from "framer-motion";
+
 import Contact from "./Contact";
 import Newsletter from "./Newsletter";
 import Socials from "./Socials";
 import useInViewAnimation from "../useInViewAnimation";
-import { motion } from "framer-motion";
+import { StyledFooter, StylingPicture, Wrapper, PictureImage } from "./styled";
 
 const footerVariants = {
   hidden: {

@@ -1,5 +1,6 @@
 import { TextContent } from "../TextContent";
-import { StyledContact, Logo, Wrapper, Icon, Info } from "./styled";
+import { StyledContact, Logo, Wrapper, Info } from "./styled";
+
 const Contact = () => {
   return (
     <StyledContact>

@@ -1,6 +1,7 @@
-import { StyledHeader, Logo, HeaderLink } from "./styled";
-import Button from "../Button";
 import { motion } from "framer-motion";
+
+import Button from "../Button";
+import { StyledHeader, Logo, HeaderLink } from "./styled";
 
 const headerVariants = {
   hidden: {

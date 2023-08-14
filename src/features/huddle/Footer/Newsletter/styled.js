@@ -28,6 +28,12 @@ export const Form = styled.form`
   }
 `;
 
+export const InputWrapper = styled.div`
+  position: relative;
+  max-width: 355px;
+  width: 100%;
+`;
+
 export const Error = styled.span`
   display: none;
   position: absolute;
@@ -39,18 +45,24 @@ export const Error = styled.span`
 `;
 
 export const EmailInput = styled.input`
-  max-width: 355px;
   width: 100%;
   border: none;
   padding: 14px;
   border-radius: 5px;
 
-  &:invalid {
-    border: 1px solid ${({ theme }) => theme.colors.lightRed};
+  &:focus-visible {
+    outline: none;
   }
 
-  &:invalid ~ ${Error} {
-    display: block;
+  &:invalid:not(:placeholder-shown) {
+    border: 1px solid ${({ theme }) => theme.colors.lightRed};
+    ~ ${Error} {
+      display: block;
+    }
+  }
+
+  &:valid {
+    border: 1px solid green;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {

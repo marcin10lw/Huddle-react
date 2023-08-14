@@ -1,7 +1,8 @@
-import { StyledStatistics } from "./styled";
-import Statictic from "./Statistic";
 import { motion } from "framer-motion";
-import useInViewAnimation from "../../useInViewAnimation";
+
+import Statictic from "./Statistic";
+import useInViewAnimation from "features/huddle/useInViewAnimation";
+import { StyledStatistics } from "./styled";
 
 const statisticVariants = {
   hidden: {

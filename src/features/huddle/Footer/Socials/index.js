@@ -1,12 +1,13 @@
-import { StyledSocials } from "./styled";
+import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookSquare,
   faSquareInstagram,
   faTwitterSquare,
 } from "@fortawesome/free-brands-svg-icons";
-import { motion } from "framer-motion";
-import useInViewAnimation from "../../useInViewAnimation";
+
+import useInViewAnimation from "features/huddle/useInViewAnimation";
+import { StyledSocials } from "./styled";
 
 const socialsVariants = {
   hidden: {
